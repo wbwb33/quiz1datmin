@@ -1,12 +1,13 @@
 import statistics
 import numpy as np
 from scipy import stats
+from scipy.stats import iqr
 data1=np.array([10, 3, 7, 5, 4, 9, 10, 1, 2, 7])
 
 #nomor 1a
 print("Mean of data-set is : % s " % (statistics.mean(data1))) 
 print("Median of data-set is : % s " % (statistics.median(data1))) 
-print("Mode of data-set is : % s " % (stats.mode(data1)))
+print(stats.mode(data1))
 
 #nomor 1b
 print("Variance : % s" % np.var(data1))
